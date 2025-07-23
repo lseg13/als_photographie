@@ -1,0 +1,139 @@
+.profil img {
+  border: white solid 1px;
+  border-radius: 2px;
+}
+
+.accueil-photos {
+  background-color: white;
+  padding: 80px;
+}
+
+.accueil-photos img {
+  border: black 1px solid;
+}
+
+.accueil-photos h2 {
+  color: #242424;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.accueil-photos div {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.accueil-introduction {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.accueil-introduction h1 {
+  margin-bottom: 15px;
+}
+
+.accueil-introduction p {
+  margin-bottom: 30px;
+  color: #e7e4e4;
+}
+
+.accueil-introduction div {
+  padding-right: 80px;
+}
+
+.section-contact h2 {
+  color: #a5b4fc;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/*
+@media screen and (max-width: 996px) {
+  .accueil-introduction {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .accueil-introduction div {
+    padding-right: 0;
+    text-align: center;
+    order: 2;
+  }
+
+  .accueil-introduction img {
+    order: 1;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .accueil-photos {
+    padding: 20px;
+  }
+
+  .accueil-photos div {
+    flex-direction: column;
+  }
+
+  .section-contact {
+    padding: 50px 20px;
+  }
+
+  .form-nom-email {
+    flex-direction: column;
+    gap: 0;
+  }
+}*/
+@media screen and (max-width: 996px) {
+  .accueil-introduction {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .accueil-introduction div {
+    padding-right: 0;
+    /* Corrige le décalage ! */
+    text-align: center;
+    order: 2;
+  }
+
+  .accueil-introduction img {
+    order: 1;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  .accueil-introduction a{
+    margin-bottom: 100px;
+  }
+  .accueil-photos {
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  .accueil-photos h2{
+    margin-top: 80px;
+  }
+  .accueil-photos img {
+    width: 25%;
+    height: 25%;
+  }
+
+  .section-contact {
+    padding: 50px 20px;
+  }
+
+  .form-nom-email {
+    flex-direction: column;
+    gap: 0;
+  }
+}
